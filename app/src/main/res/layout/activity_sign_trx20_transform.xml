@@ -56,7 +56,7 @@
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="50dp"
                         android:layout_marginRight="16dp"
-                        android:text="需要签名的交易数据"
+                        android:text="@string/transaction_data_that_needs_to_be_signed"
                         android:textColor="@color/colorBlack"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -71,7 +71,7 @@
                     android:layout_marginRight="30dp"
                     android:background="@drawable/edittext"
                     android:gravity="center"
-                    android:hint="请在这里粘贴交易数据..."
+                    android:hint="@string/please_paste_transaction_data_here"
                     android:textSize="18dp" />
 
 
@@ -82,7 +82,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
-                    android:hint="请输入签名人地址"
+                    android:hint="Please enter the address of the signer"
                     android:textColor="@color/black" />
 
                 <EditText
@@ -92,7 +92,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
-                    android:hint="请输入签名人密码"
+                    android:hint="@string/please_enter_the_signer_password"
                     android:inputType="textPassword"
                     android:textColor="@color/colorBlack"
                     android:textSize="18dp" />
@@ -113,7 +113,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/button_1_11"
-                    android:text="复制到剪切板"
+                    android:text="@string/copy_to_clipboard"
                     android:textColor="@color/white"
                     android:visibility="invisible" />
 
@@ -132,7 +132,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="40dp"
                     android:background="@drawable/button_1_11"
-                    android:text="开始签名"
+                    android:text="@string/start_signing"
                     android:textColor="@color/white"
                     android:textSize="18dp"
                     android:textStyle="bold" />

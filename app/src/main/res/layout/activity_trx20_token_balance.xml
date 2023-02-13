@@ -55,7 +55,7 @@
             android:layout_marginRight="24dp"
             android:layout_marginBottom="40dp"
             android:background="@drawable/button_1_11"
-            android:text="查询USDT余额"
+            android:text="@string/query_usdt_balance"
             android:textColor="@color/white" />
     </LinearLayout>
 

@@ -18,7 +18,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="20dp"
-            android:hint="请输入钱包地址" />
+            android:hint="@string/please_enter_wallet_address" />
 
         <EditText
             android:id="@+id/password"
@@ -27,7 +27,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:hint="请输入钱包密码"
+            android:hint="@string/please_enter_wallet_password"
             android:textColor="@color/colorBlack" />
 
         <TextView
@@ -45,7 +45,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/button_1_11"
-            android:text="复制到剪切板"
+            android:text="@string/copy_to_clipboard"
             android:textColor="@color/white"
             android:visibility="invisible" />
         <View
@@ -63,7 +63,7 @@
             android:layout_marginRight="24dp"
             android:layout_marginBottom="40dp"
             android:background="@drawable/button_1_11"
-            android:text="导出私钥"
+            android:text="@string/export_private_key"
             android:textColor="@color/white" />
     </LinearLayout>
 

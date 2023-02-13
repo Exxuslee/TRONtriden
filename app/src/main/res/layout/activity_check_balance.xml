@@ -18,7 +18,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="20dp"
-            android:hint="请输入钱包地址" />
+            android:hint="@string/please_enter_wallet_address" />
 
         <TextView
             android:id="@+id/balanceTxt"
@@ -43,7 +43,7 @@
             android:layout_marginRight="24dp"
             android:layout_marginBottom="40dp"
             android:background="@drawable/button_1_11"
-            android:text="查询TRX余额"
+            android:text="@string/query_trx_balance"
             android:textColor="@color/white" />
     </LinearLayout>
 

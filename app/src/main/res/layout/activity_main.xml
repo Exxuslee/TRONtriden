@@ -41,7 +41,7 @@
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
 
-                            android:text="版本 0.9.1"
+                            android:text="@string/version_0_9_1"
                             android:textColor="@color/black"
                             android:textSize="24dp" />
 
@@ -82,7 +82,7 @@
                         android:alpha="0.5"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="申请新钱包"
+                        android:text="@string/apply_for_a_new_wallet"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -95,7 +95,7 @@
                         android:alpha="0.5"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="导出钱包私钥"
+                        android:text="@string/export_wallet_private_key"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -108,7 +108,7 @@
                         android:alpha="0.5"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="导出钱包密钥库"
+                        android:text="@string/export_wallet_keystore"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -133,7 +133,7 @@
                         android:alpha="0.5"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="通过私钥导入新钱包"
+                        android:text="@string/import_new_wallet_with_private_key"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -146,7 +146,7 @@
                         android:alpha="0.5"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="通过密钥库导入新钱包"
+                        android:text="@string/import_new_wallet_via_keystore"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -171,7 +171,7 @@
                         android:alpha="0.5"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="查询TRX余额"
+                        android:text="@string/query_trx_balance"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -184,7 +184,7 @@
                         android:alpha="0.5"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="查询USDT余额"
+                        android:text="@string/query_usdt_balance"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -197,7 +197,7 @@
                         android:alpha="0.5"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="TRX转账"
+                        android:text="@string/trx_transfer"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -210,7 +210,7 @@
                         android:alpha="0.5"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="USDT转账"
+                        android:text="@string/usdt_transfer"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -222,7 +222,7 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="创建多签账号"
+                        android:text="@string/create_a_multi_signature_account"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold"
@@ -235,7 +235,7 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="创建多签转账"
+                        android:text="@string/create_a_multi_signature_transfer"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -247,7 +247,7 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="多签转账签名"
+                        android:text="@string/multi_signature_transfer_signature"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -259,7 +259,7 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/button_1_11"
                         android:elevation="10dp"
-                        android:text="公布转账信息"
+                        android:text="@string/publish_transfer_information"
                         android:textColor="@color/white"
                         android:textSize="14dp"
                         android:textStyle="bold" />

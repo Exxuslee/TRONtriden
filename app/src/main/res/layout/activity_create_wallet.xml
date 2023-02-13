@@ -34,7 +34,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="85dp"
-                        android:text="设置钱包密码"
+                        android:text="@string/set_wallet_password"
                         android:textColor="@color/colorBlack"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -46,7 +46,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:background="@null"
-                        android:hint="请输入密码（最少6个字符）"
+                        android:hint="@string/please_enter_a_password"
                         android:minEms="6"
                         android:singleLine="true" />
 
@@ -80,7 +80,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@null"
-                            android:hint="重复确认密码"
+                            android:hint="@string/repeat_to_confirm_password"
                             android:minEms="6"
                             android:singleLine="true" />
 
@@ -123,7 +123,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/button_1_11"
-                    android:text="复制地址到剪切板"
+                    android:text="@string/copy_address_to_clipboard"
                     android:textColor="@color/white"
                     android:visibility="invisible" />
 
@@ -141,7 +141,7 @@
                     android:layout_marginRight="24dp"
                     android:layout_marginBottom="40dp"
                     android:background="@drawable/button_1_11"
-                    android:text="创建钱包"
+                    android:text="@string/create_wallet"
                     android:textColor="@color/white"
                     android:textSize="14dp"
                     android:textStyle="bold" />

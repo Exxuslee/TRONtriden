@@ -18,7 +18,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="20dp"
-            android:hint="请输入出款人地址"
+            android:hint="Please enter the sender's address"
             android:textColor="@color/colorBlack" />
 
         <EditText
@@ -28,7 +28,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
-            android:hint="请输入出款人密码"
+            android:hint="@string/please_enter_the_payer_password"
             android:inputType="textPassword"
             android:textColor="@color/colorBlack" />
 
@@ -50,7 +50,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
                 android:background="@null"
-                android:hint="TRX 转账额度"
+                android:hint="@string/trx_transfer_amount"
                 android:inputType="numberDecimal"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
@@ -66,7 +66,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:hint="请输入收款人地址"
+            android:hint="@string/please_enter_the_beneficiary_address"
             android:textColor="@color/colorBlack" />
 
         <TextView
@@ -91,7 +91,7 @@
             android:layout_marginRight="24dp"
             android:layout_marginBottom="40dp"
             android:background="@drawable/button_1_11"
-            android:text="TRX 转账金额"
+            android:text="@string/trx_transfer_amount"
             android:textColor="@color/white" />
 
 
