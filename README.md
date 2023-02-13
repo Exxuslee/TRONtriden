@@ -19,4 +19,4 @@ This app demonstrates wallet features which contains examples of:
 - Build and Run this application on Android Studio. 
 
 ### 2. Screenshots
-[![TRX-main.jpg](https://i.postimg.cc/nh8cbvfZ/TRX-main.jpg)](https://postimg.cc/RNRzwJ0b)
+[![TRX-main.jpg](https://github.com/Exxuslee/Tron/blob/main/main.png)](https://github.com/Exxuslee/Tron/blob/main/main.png)
