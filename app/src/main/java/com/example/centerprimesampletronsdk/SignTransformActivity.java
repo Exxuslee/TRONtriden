@@ -48,13 +48,13 @@ public class SignTransformActivity extends AppCompatActivity {
                             binding.copy.setVisibility((View.VISIBLE));
                             binding.signBtn.setEnabled(true);
                         }, error -> {
-                            binding.signedData.setText(error.getMessage() + ". 请检查输入项是否正确!");
+                            binding.signedData.setText(error.getMessage() + ". Please check if the entry is correct!");
                             error.printStackTrace();
                             Toast.makeText(this, error.getMessage(), Toast.LENGTH_SHORT).show();
                             binding.signBtn.setEnabled(true);
                         });
             } else {
-                Toast.makeText(this, "请检查输入项是否正确!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please check if the entry is correct!", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -62,7 +62,7 @@ public class SignTransformActivity extends AppCompatActivity {
             ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
             ClipData clip = ClipData.newPlainText("label", binding.signedData.getText().toString());
             clipboard.setPrimaryClip(clip);
-            Toast.makeText(this, "已复制到剪切板!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "copied to clipboard!", Toast.LENGTH_SHORT).show();
         });
     }
 }

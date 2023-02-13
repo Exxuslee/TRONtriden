@@ -63,7 +63,7 @@ public class ExportKeyStoreActivity extends AppCompatActivity {
                         /**
                          * if function fails error can be catched in this block
                          */
-                        Toast.makeText(this, "请输入有效钱包地址", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Please enter a valid wallet address", Toast.LENGTH_SHORT).show();
                     });
         });
 
@@ -71,7 +71,7 @@ public class ExportKeyStoreActivity extends AppCompatActivity {
             ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
             ClipData clip = ClipData.newPlainText("label", binding.keystoreT.getText().toString());
             clipboard.setPrimaryClip(clip);
-            Toast.makeText(this, "已复制到剪切板!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "copied to clipboard!", Toast.LENGTH_SHORT).show();
         });
     }
 

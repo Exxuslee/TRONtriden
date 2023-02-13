@@ -56,7 +56,7 @@ public class ImportWalletFromPrivateKeyActivity extends AppCompatActivity {
             ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
             ClipData clip = ClipData.newPlainText("label", binding.privateKey.getText().toString());
             clipboard.setPrimaryClip(clip);
-            Toast.makeText(this, "已复制到剪切板！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "copied to clipboard！", Toast.LENGTH_SHORT).show();
         });
     }
 }

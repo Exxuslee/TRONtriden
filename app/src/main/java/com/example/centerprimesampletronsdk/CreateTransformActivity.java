@@ -57,13 +57,13 @@ public class CreateTransformActivity extends AppCompatActivity {
                             binding.copy2.setVisibility((View.VISIBLE));
                             binding.createTransform.setEnabled(true);
                         }, error -> {
-                            binding.result.setText(error.getMessage() + ". 请检查输入项是否正确!");
+                            binding.result.setText(error.getMessage() + ". Please check if the entry is correct!");
                             error.printStackTrace();
                             Toast.makeText(this, error.getMessage(), Toast.LENGTH_SHORT).show();
                             binding.createTransform.setEnabled(true);
                         });
             } else {
-                Toast.makeText(this, "请检查输入项是否正确!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please check if the entry is correct!", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -71,7 +71,7 @@ public class CreateTransformActivity extends AppCompatActivity {
             ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
             ClipData clip = ClipData.newPlainText("label", binding.result.getText().toString());
             clipboard.setPrimaryClip(clip);
-            Toast.makeText(this, "已复制到剪切板!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "copied to clipboard!", Toast.LENGTH_SHORT).show();
         });
     }
 }

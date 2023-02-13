@@ -43,7 +43,7 @@ public class CheckBalanceActivity extends AppCompatActivity {
                          * if function successfully completes result can be caught in this block
                          */
                         balance = balance.setScale(2, RoundingMode.HALF_UP);
-                        balanceBinding.balanceTxt.setText("TRX余额为: " + balance.toString());
+                        balanceBinding.balanceTxt.setText("TRX balance is: " + balance.toString());
                         balanceBinding.balanceTxt.setVisibility(View.VISIBLE);
 
                     }, error -> {

@@ -49,11 +49,11 @@ public class SendUSDTActivity extends AppCompatActivity {
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(usdt -> {
-                            binding.result.setText("交易Hash: " + usdt);
-                            Toast.makeText(this, "已发送USDT : " + usdtAmount.toString(), Toast.LENGTH_SHORT).show();
+                            binding.result.setText("Transaction Hash: " + usdt);
+                            Toast.makeText(this, "Sent USDT : " + usdtAmount.toString(), Toast.LENGTH_SHORT).show();
                             binding.sendERCToken.setEnabled(true);
                         }, error -> {
-                            binding.result.setText(error.getMessage() + ". 请检查输入项是否正确!");
+                            binding.result.setText(error.getMessage() + ". Please check if the entry is correct!");
 
                             error.printStackTrace();
                             Toast.makeText(this, error.getMessage(), Toast.LENGTH_SHORT).show();

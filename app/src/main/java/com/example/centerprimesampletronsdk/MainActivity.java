@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, SendUSDTActivity.class));
         });
 
-        // Create mutilsig （因grpcAPI版本问题，无法支持）
+        // Create mutilsig （Unable to support due to grpcAPI version issues）
 
         binding.createTrans.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, CreateTransformActivity.class));

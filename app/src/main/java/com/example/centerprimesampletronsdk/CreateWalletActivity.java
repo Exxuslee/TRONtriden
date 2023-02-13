@@ -66,7 +66,7 @@ public class CreateWalletActivity extends AppCompatActivity {
 
                     });
             } else {
-                Toast.makeText(this, "请正确输入密码", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please enter the correct password", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -75,7 +75,7 @@ public class CreateWalletActivity extends AppCompatActivity {
             ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
             ClipData clip = ClipData.newPlainText("label", binding.address.getText().toString());
             clipboard.setPrimaryClip(clip);
-            Toast.makeText(this, "已复制到剪切板！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "copied to clipboard！", Toast.LENGTH_SHORT).show();
         });
 
     }

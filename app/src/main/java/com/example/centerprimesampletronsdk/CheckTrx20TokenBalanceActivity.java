@@ -47,8 +47,8 @@ public class CheckTrx20TokenBalanceActivity extends AppCompatActivity {
                          * if function successfully completes result can be caught in this block
                          */
                         balance = balance.divide(new BigDecimal(1000000), 2, RoundingMode.HALF_UP);
-                        binding.balanceTxt.setText("USDT余额为 :" + balance.toString());
-                        Toast.makeText(this, "账户余额 : " + balance, Toast.LENGTH_SHORT).show();
+                        binding.balanceTxt.setText("USDT balance is:" + balance.toString());
+                        Toast.makeText(this, "Account Balance: " + balance, Toast.LENGTH_SHORT).show();
 
                     }, error -> {
                         /**

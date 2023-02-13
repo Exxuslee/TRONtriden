@@ -50,11 +50,11 @@ public class SendTrxActivity extends AppCompatActivity {
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(tx -> {
-                            binding.result.setText("交易Hash: " + tx);
-                            Toast.makeText(this, "已发送TRX : " + trxAmount.toString(), Toast.LENGTH_SHORT).show();
+                            binding.result.setText("Transaction Hash: " + tx);
+                            Toast.makeText(this, "Sent TRX : " + trxAmount.toString(), Toast.LENGTH_SHORT).show();
 
                         }, error -> {
-                            binding.result.setText(error.getMessage() + ". 请检查输入项是否正确!");
+                            binding.result.setText(error.getMessage() + ". Please check if the entry is correct!");
 
                             error.printStackTrace();
                             Toast.makeText(this, error.getMessage(), Toast.LENGTH_SHORT).show();

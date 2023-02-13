@@ -46,7 +46,7 @@ public class ExportPrivateKeyActivity extends AppCompatActivity {
             if(!TextUtils.isEmpty(binding.address.getText().toString())) {
                 walletAddress = binding.address.getText().toString();
             } else {
-                Toast.makeText(this, "输入钱包地址", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Enter wallet address", Toast.LENGTH_SHORT).show();
             }
 
             String password = "";
@@ -54,7 +54,7 @@ public class ExportPrivateKeyActivity extends AppCompatActivity {
                     && binding.password.getText().toString().trim().length() >= 6) {
                 password = binding.password.getText().toString();
             }else {
-                Toast.makeText(this, "密码不符合规则", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Password does not comply with the rules", Toast.LENGTH_SHORT).show();
             }
 
             tronWalletManager.exportPrivateKey(walletAddress, password,this)
@@ -74,7 +74,7 @@ public class ExportPrivateKeyActivity extends AppCompatActivity {
                         /**
                          * if function fails error can be catched in this block
                          */
-                        Toast.makeText(this, "请输入有效钱包地址", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Please enter a valid wallet address", Toast.LENGTH_SHORT).show();
                     });
         });
 
@@ -82,7 +82,7 @@ public class ExportPrivateKeyActivity extends AppCompatActivity {
             ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
             ClipData clip = ClipData.newPlainText("label", binding.privateKey.getText().toString());
             clipboard.setPrimaryClip(clip);
-            Toast.makeText(this, "已复制到剪切板!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "copied to clipboard!", Toast.LENGTH_SHORT).show();
         });
     }
 

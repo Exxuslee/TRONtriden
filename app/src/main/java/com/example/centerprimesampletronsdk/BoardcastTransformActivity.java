@@ -37,21 +37,21 @@ public class BoardcastTransformActivity extends AppCompatActivity {
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(r -> {
                             if(r) {
-                                binding.boardcastResult.setText("公告完成");
+                                binding.boardcastResult.setText("Announcement completed");
                                 binding.boardcastBtn.setEnabled(true);
                             } else {
-                                binding.boardcastResult.setText("公告出现异常失败");
-                                Toast.makeText(this, "公告出现异常失败", Toast.LENGTH_SHORT).show();
+                                binding.boardcastResult.setText("Announcement failed with exception");
+                                Toast.makeText(this, "Announcement failed with exception", Toast.LENGTH_SHORT).show();
                                 binding.boardcastBtn.setEnabled(true);
                             }
                         }, error -> {
-                            binding.boardcastResult.setText(error.getMessage() + ". 请检查输入项是否正确!");
+                            binding.boardcastResult.setText(error.getMessage() + ". Please check if the entry is correct!");
                             error.printStackTrace();
                             Toast.makeText(this, error.getMessage(), Toast.LENGTH_SHORT).show();
                             binding.boardcastBtn.setEnabled(true);
                         });
             } else {
-                Toast.makeText(this, "请检查输入项是否正确!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please check if the entry is correct!", Toast.LENGTH_SHORT).show();
             }
 
         });
