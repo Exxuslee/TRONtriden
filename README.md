@@ -1,4 +1,4 @@
-# Tron Android Wallet Sample
+# Tron Android(Kotlin) Wallet Sample
 
 ## Overview 
 
@@ -9,7 +9,6 @@ This app demonstrates wallet features which contains examples of:
   - Check Balance
   - Check Token Balance
   - Send TRX
-
 
 ## Getting Started 
 
