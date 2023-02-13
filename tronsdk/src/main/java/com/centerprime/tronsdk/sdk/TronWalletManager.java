@@ -1,23 +1,16 @@
 package com.centerprime.tronsdk.sdk;
 
-import android.accounts.AccountManager;
 import android.content.Context;
 import android.os.Build;
 import android.provider.Settings;
-// import android.support.annotation.NonNull;
-import android.util.Log;
 
 import com.centerprime.tronsdk.api.GrpcAPI;
 import com.centerprime.tronsdk.common.crypto.ECKey;
 import com.centerprime.tronsdk.common.crypto.Hash;
 import com.centerprime.tronsdk.common.crypto.Sha256Hash;
-import com.centerprime.tronsdk.common.utils.AbiUtil;
 import com.centerprime.tronsdk.common.utils.Base58;
 import com.centerprime.tronsdk.common.utils.ByteArray;
-import com.centerprime.tronsdk.common.utils.Hex2Decimal;
-import com.centerprime.tronsdk.common.utils.StringTronUtil;
 import com.centerprime.tronsdk.common.utils.TransactionUtils;
-import com.centerprime.tronsdk.common.utils.Utils;
 import com.centerprime.tronsdk.core.config.Parameter;
 import com.centerprime.tronsdk.core.exception.CancelException;
 import com.centerprime.tronsdk.core.exception.CipherException;
@@ -28,11 +21,8 @@ import com.centerprime.tronsdk.keystore.WalletUtils;
 import com.centerprime.tronsdk.protos.Protocol;
 import com.centerprime.tronsdk.walletcli.WalletApiWrapper;
 import com.centerprime.tronsdk.walletserver.WalletApi;
-import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.internal.LinkedTreeMap;
-
-import org.spongycastle.util.encoders.Hex;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -40,13 +30,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.math.BigDecimal;
-import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.List;
 
 import io.reactivex.Single;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;

@@ -1,97 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.centerprimesampletronsdk">
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:largeHeap="true"
-        android:hardwareAccelerated="false"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:exported="true">
+        android:theme="@style/Theme.TRON"
+        android:largeHeap="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.TRON">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"
-                    android:screenOrientation="portrait"/>
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".CreateWalletActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
-        <activity
-            android:name=".ImportWalletFromKeyStoreActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
-
-        <activity
-            android:name=".CheckBalanceActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
-
-        <activity
-            android:name=".ExportPrivateKeyActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
-
-        <activity
-            android:name=".ExportKeyStoreActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
-
-        <activity
-            android:name=".ImportWalletFromPrivateKeyActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
-
-        <activity
-            android:name=".SendTrxActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
-
-        <activity
-            android:name=".SendUSDTActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
-
-        <activity
-            android:name=".CheckTrx20TokenBalanceActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
-
-        <activity
-            android:name=".CreateTransformActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
-
-        <activity
-            android:name=".SignTransformActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
-
-        <activity
-            android:name=".BoardcastTransformActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            />
     </application>
 
 </manifest>

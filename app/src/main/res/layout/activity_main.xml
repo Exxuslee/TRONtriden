@@ -1,227 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white">
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
 
-        <ScrollView
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/gray"/>
 
+    </com.google.android.material.appbar.AppBarLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="20dp">
+    <include layout="@layout/content_main" />
 
-                <Button
-                    android:id="@+id/createBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:alpha="0.5"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/apply_for_a_new_wallet"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/exportKeystore"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:alpha="0.5"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/export_wallet_keystore"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <!--                    <Button-->
-                <!--                        android:id="@+id/exportPrivateKey"-->
-                <!--                        android:layout_width="match_parent"-->
-                <!--                        android:textColor="@color/white"-->
-                <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:layout_marginBottom="10dp"-->
-                <!--                        android:background="@drawable/button_1_11"-->
-                <!--                        android:textSize="14dp"-->
-                <!--                        android:elevation="10dp"-->
-                <!--                        android:textStyle="bold"-->
-                <!--                        android:text="Export Private Key" />-->
-
-                <Button
-                    android:id="@+id/importPrivateKeyBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:alpha="0.5"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/import_new_wallet_with_private_key"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/importBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:alpha="0.5"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/import_new_wallet_via_keystore"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <!--                    <Button-->
-                <!--                        android:id="@+id/importByPrivatekey"-->
-                <!--                        android:layout_width="match_parent"-->
-                <!--                        android:textColor="@color/white"-->
-                <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:layout_marginBottom="10dp"-->
-                <!--                        android:background="@drawable/button_1_11"-->
-                <!--                        android:textSize="14dp"-->
-                <!--                        android:elevation="10dp"-->
-                <!--                        android:textStyle="bold"-->
-                <!--                        android:text="Import by Private Key" />-->
-
-                <Button
-                    android:id="@+id/exportPrivateKeyBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:alpha="0.5"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/export_wallet_private_key"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/checkBalance"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:alpha="0.5"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/query_trx_balance"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/checkERCTokenkBalance"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:alpha="0.5"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/query_usdt_balance"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/sendTrx"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:alpha="0.5"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/trx_transfer"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/sendUSDT"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:alpha="0.5"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/usdt_transfer"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/createMutilsig"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/create_a_multi_signature_account"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold"
-                    android:visibility="invisible" />
-
-                <Button
-                    android:id="@+id/createTrans"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/create_a_multi_signature_transfer"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/sigMutilsigTrans"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/multi_signature_transfer_signature"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/boardcastTrans"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/button_1_11"
-                    android:elevation="10dp"
-                    android:text="@string/publish_transfer_information"
-                    android:textColor="@color/white"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <!--                    <Button-->
-                <!--                        android:id="@+id/sendERCToken"-->
-                <!--                        android:layout_width="match_parent"-->
-                <!--                        android:textColor="@color/white"-->
-                <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:layout_marginBottom="10dp"-->
-                <!--                        android:background="@drawable/button_1_11"-->
-                <!--                        android:textSize="14dp"-->
-                <!--                        android:elevation="10dp"-->
-                <!--                        android:textStyle="bold"-->
-                <!--                        android:text="Send Ethereum Token" />-->
-
-
-            </LinearLayout>
-        </ScrollView>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,15 +1,16 @@
 plugins {
     id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    compileSdkVersion 33
-    buildToolsVersion "29.0.3"
+    namespace 'com.exxus.tron'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.centerprimesampletronsdk"
-        minSdkVersion 26
-        targetSdkVersion 33
+        applicationId "com.exxus.tron"
+        minSdk 24
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -26,8 +27,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    dataBinding {
-        enabled = true
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
     }
 }
 
@@ -38,24 +42,28 @@ project.ext {
     web3jVersion = "3.0.1-android"
     gethVersion = "1.7.3"
     gsonVersion = "2.8.2"
-    rxJavaVersion = "2.1.6"
-    rxAndroidVersion = "2.1.0"
+    rxJavaVersion = "2.2.19"
+    rxAndroidVersion = "2.1.1"
     daggerVersion = '2.14.1'
-
     appCompatVersion = '1.1.0'
     designSupportVersion = '1.1.0'
     recyclerViewVersion = '1.1.0'
 }
 
+
 dependencies {
-    //implementation 'com.github.centerprime:Tron-Client-SDK:1.0.5'
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    //implementation "org.koin:koin-androidx-scope:2.1.6"
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
     implementation "io.reactivex.rxjava2:rxjava:$project.rxJavaVersion"
     implementation "io.reactivex.rxjava2:rxandroid:$project.rxAndroidVersion"
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation project(path: ':tronsdk')
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }

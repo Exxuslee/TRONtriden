@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.exxus.tron.ui.MainFragment"
+        android:label="@string/main"
+        tools:layout="@layout/main">
+
+        <action
+            android:id="@+id/to_CheckBalanceFragment"
+            app:destination="@id/CheckBalanceFragment" />
+                <action
+            android:id="@+id/to_CheckTrx20TokenBalanceFragment"
+            app:destination="@id/CheckTrx20TokenBalanceFragment" />
+                <action
+            android:id="@+id/to_CreateTransformFragment"
+            app:destination="@id/CreateTransformFragment" />
+                <action
+            android:id="@+id/to_CreateWalledFragment"
+            app:destination="@id/CreateWalledFragment" />
+                <action
+            android:id="@+id/to_ExportKeyStoreFragment"
+            app:destination="@id/ExportKeyStoreFragment" />
+                <action
+            android:id="@+id/to_ExportPrivateKeyFragment"
+            app:destination="@id/ExportPrivateKeyFragment" />
+                <action
+            android:id="@+id/to_ImportWalletFromKeyStoreFragment"
+            app:destination="@id/ImportWalletFromKeyStoreFragment" />
+                <action
+            android:id="@+id/to_ImportWalletFromPrivateKeyFragment"
+            app:destination="@id/ImportWalletFromPrivateKeyFragment" />
+                <action
+            android:id="@+id/to_SendTrxFragment"
+            app:destination="@id/SendTrxFragment" />
+                <action
+            android:id="@+id/to_SendUSDTFragment"
+            app:destination="@id/SendUSDTFragment" />
+                <action
+            android:id="@+id/to_BoardcastTransformFragment"
+            app:destination="@id/BoardcastTransformFragment" />
+                <action
+            android:id="@+id/to_SignTransformFragment"
+            app:destination="@id/SignTransformFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/CheckBalanceFragment"
+        android:name="com.exxus.tron.ui.CheckBalanceFragment"
+        android:label="@string/check_balance"
+        tools:layout="@layout/check_balance">
+    </fragment>
+    <fragment
+        android:id="@+id/CheckTrx20TokenBalanceFragment"
+        android:name="com.exxus.tron.ui.CheckTrx20TokenBalanceFragment"
+        android:label="@string/trx20_token_balance"
+        tools:layout="@layout/trx20_token_balance">
+    </fragment>
+    <fragment
+        android:id="@+id/CreateTransformFragment"
+        android:name="com.exxus.tron.ui.CreateTransformFragment"
+        android:label="@string/create_trx20_transform"
+        tools:layout="@layout/create_trx20_transform">
+    </fragment>
+    <fragment
+        android:id="@+id/CreateWalledFragment"
+        android:name="com.exxus.tron.ui.CreateWalledFragment"
+        android:label="@string/create_wallet"
+        tools:layout="@layout/create_wallet">
+    </fragment>
+    <fragment
+        android:id="@+id/ExportKeyStoreFragment"
+        android:name="com.exxus.tron.ui.ExportKeyStoreFragment"
+        android:label="@string/export_keystore"
+        tools:layout="@layout/export_keystore">
+    </fragment>
+    <fragment
+        android:id="@+id/ExportPrivateKeyFragment"
+        android:name="com.exxus.tron.ui.ExportPrivateKeyFragment"
+        android:label="@string/export_private_key"
+        tools:layout="@layout/export_private_key">
+    </fragment>
+    <fragment
+        android:id="@+id/ImportWalletFromKeyStoreFragment"
+        android:name="com.exxus.tron.ui.ImportWalletFromKeyStoreFragment"
+        android:label="@string/import_wallet_keystore"
+        tools:layout="@layout/import_wallet_keystore">
+    </fragment>
+    <fragment
+        android:id="@+id/ImportWalletFromPrivateKeyFragment"
+        android:name="com.exxus.tron.ui.ImportWalletFromPrivateKeyFragment"
+        android:label="@string/import_private_key"
+        tools:layout="@layout/import_private_key">
+    </fragment>
+    <fragment
+        android:id="@+id/SendTrxFragment"
+        android:name="com.exxus.tron.ui.SendTrxFragment"
+        android:label="@string/send_trx"
+        tools:layout="@layout/send_trx">
+    </fragment>
+    <fragment
+        android:id="@+id/SendUSDTFragment"
+        android:name="com.exxus.tron.ui.SendUSDTFragment"
+        android:label="@string/send_trx20_token"
+        tools:layout="@layout/send_trx20_token">
+    </fragment>
+    <fragment
+        android:id="@+id/BoardcastTransformFragment"
+        android:name="com.exxus.tron.ui.BoardcastTransformFragment"
+        android:label="@string/boardcast_trx20_transform"
+        tools:layout="@layout/boardcast_trx20_transform">
+    </fragment>
+    <fragment
+        android:id="@+id/SignTransformFragment"
+        android:name="com.exxus.tron.ui.SignTransformFragment"
+        android:label="@string/sign_trx20_transform"
+        tools:layout="@layout/sign_trx20_transform">
+    </fragment>
+</navigation>
