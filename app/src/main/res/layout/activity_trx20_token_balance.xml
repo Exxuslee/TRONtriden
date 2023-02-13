@@ -19,7 +19,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="20dp"
-            android:hint="请输入钱包地址" />
+            android:hint="@string/please_enter_wallet_address" />
 
         <EditText
             android:id="@+id/contractAddress"
@@ -28,9 +28,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
-            android:text="TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
-            android:visibility="invisible"
-            tools:visibility="invisible" />
+            android:text="TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"/>
 
         <TextView
             android:id="@+id/balanceTxt"
