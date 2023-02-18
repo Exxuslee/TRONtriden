@@ -29,14 +29,14 @@ class CheckBalanceFragment : Fragment() {
         return binding.root
     }
 
-    @SuppressLint("CheckResult")
+    @SuppressLint("CheckResult", "SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val tronWalletManager = TronWalletManager.getInstance()
         tronWalletManager.init(requireContext())
-        binding.checkBtn.setOnClickListener { v ->
-            val address: String = binding.address.getText().toString()
+        binding.checkBtn.setOnClickListener {
+            val address: String = binding.address.text.toString()
             tronWalletManager.getBalanceTrx(address, requireContext())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
