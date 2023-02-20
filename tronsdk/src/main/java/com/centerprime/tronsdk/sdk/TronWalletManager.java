@@ -61,9 +61,8 @@ public class TronWalletManager {
         WalletApi.reloadClient(context);
 
         Retrofit retrofit = new Retrofit.Builder()
-//                .baseUrl("https://apilist.tronscan.org/")
-                .baseUrl("https://api.shasta.trongrid.io/v1/")
-
+                .baseUrl("https://apilist.tronscan.org/")
+//                .baseUrl("https://api.shasta.trongrid.io/v1/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
