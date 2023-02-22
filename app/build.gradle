@@ -33,6 +33,20 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+    packagingOptions {
+        exclude("META-INF/INDEX.LIST")
+        exclude("META-INF/DEPENDENCIES")
+        exclude("META-INF/native-image/io.netty/transport/native-image.properties")
+        exclude("META-INF/native-image/io.netty/codec-http2/native-image.properties")
+        exclude("META-INF/native-image/io.netty/codec-http/native-image.properties")
+        exclude("META-INF/native-image/io.netty/buffer/native-image.properties")
+        exclude("META-INF/native-image/io.netty/handler/native-image.properties")
+        exclude("META-INF/io.netty.versions.properties")
+        exclude("META-INF/native-image/io.netty/common/native-image.properties")
+        exclude("META-INF/native-image/io.netty/transport/reflection-config.json")
+
+    }
 }
 
 project.ext {
@@ -62,7 +76,34 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
     implementation "io.reactivex.rxjava2:rxjava:$project.rxJavaVersion"
     implementation "io.reactivex.rxjava2:rxandroid:$project.rxAndroidVersion"
+
     implementation project(path: ':tronsdk')
+
+    implementation 'com.google.protobuf:protobuf-java:3.19.1'
+
+    implementation 'io.grpc:grpc-netty-shaded:1.41.0'
+    implementation 'io.grpc:grpc-netty:1.42.1'
+    implementation 'io.grpc:grpc-protobuf:1.42.1'
+    implementation 'io.grpc:grpc-stub:1.48.1'
+
+    implementation "org.bouncycastle:bcprov-jdk15on:1.70"
+
+    implementation "io.vertx:vertx-web-graphql:3.8.4"
+    implementation "io.vertx:vertx-grpc:3.8.4"
+    implementation "io.vertx:vertx-config:3.8.4"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:2.13.3"
+    implementation group: 'com.google.cloud', name: 'google-cloud-pubsub', version: '1.114.7'
+
+    implementation "com.google.protobuf:protobuf-java-util:3.19.1"
+    implementation "com.googlecode.protobuf-java-format:protobuf-java-format:1.4"
+
+
+    implementation 'javax.annotation:javax.annotation-api:1.3.2'
+
+    //if you are using the *.jar files, ues the following line
+    implementation fileTree(dir:'your path', include: '*.jar')
+    implementation 'com.google.guava:guava:28.0-jre'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

@@ -12,6 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "TRON"
+rootProject.name = "TRONtriden"
 include ':app'
 include ':tronsdk'

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TRON</string>
+    <string name="app_name">TRON triden</string>
     <string name="announce_transactions_to_the_chain">Announce transactions to the chain</string>
     <string name="please_paste_the_signed_transaction_data_here">Please paste the signed transaction data here...</string>
     <string name="announcement_transaction">Announcement transaction</string>

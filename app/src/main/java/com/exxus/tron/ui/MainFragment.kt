@@ -1,6 +1,7 @@
 package com.exxus.tron.ui
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.exxus.tron.R
 import com.exxus.tron.databinding.MainBinding
+import org.tron.trident.core.key.KeyPair
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -67,6 +69,13 @@ class MainFragment : Fragment() {
         binding.boardcastTrans.setOnClickListener {
             findNavController().navigate(R.id.to_BoardcastTransformFragment)
         }
+        trident()
+    }
+
+    private fun trident() {
+        //val keyPair = KeyPair("f09c3fd11ec35f168eac641e5583c955e0e8d78d3e426bf120cb6ec9f3722c42")
+        val keyPair = KeyPair.generate()
+        Log.d("Trident", keyPair.toBase58CheckAddress())
     }
 
     override fun onDestroyView() {
